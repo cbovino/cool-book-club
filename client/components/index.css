@@ -1,0 +1,90 @@
+#container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    flex-direction: column;
+
+}
+
+#login #form1 #wrapper1 {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#form1 input {
+    margin-bottom: 20px;
+}
+
+#form1 {
+    border: black;
+    border-radius: 2px;
+}
+
+#login button {
+    width: 150px;
+    height: 40px;
+
+}
+
+#needit {
+    width: 150px;
+    height: 40px;
+}
+
+
+#dash {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    padding-left: 80px;
+    max-height: 500px;
+    overflow: hidden;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+
+#dash div{
+    width: 320px;
+}
+
+
+
+#special {
+    height: 300px;
+    width: 300;
+    max-height: 300px;
+    overflow: auto;
+    font-size: 40px;
+}
+
+#special2 {
+    max-height: 300px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#message {
+    font-size: 10px;
+}
+
+#name {
+    font-size: 10px;
+}
+
+#Bookname {
+    font-size: 20px
+}
+
+#author {
+    font-size: 20px
+}
+
+#signup input {
+    margin-top: 10px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
