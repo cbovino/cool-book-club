@@ -1,5 +1,4 @@
 const express = require('express');
-
 const router = express.Router();
 
 
@@ -40,5 +39,6 @@ router.get('/getMessage/:id', bcController.getClubMessage, (req, res, next) => {
   console.log("Get messages fro specific club");
   next();
 })
+
 
 module.exports = router;

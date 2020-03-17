@@ -12,6 +12,18 @@ export default class NewClub extends React.Component {
     }
 
 
+    webSocketTest (){
+        const ws = new WebSocket('ws://localhost:3000/api/bookClub/messagesocket')
+        ws.onopen = function () {
+            console.log('websocket is connected ...')     
+            ws.send('connected')
+        }    // event emmited when receiving message 
+        ws.onmessage = function (ev) {
+            console.log(ev);
+        }
+
+
+    }
 
     submitMessage() {
         event.preventDefault()
