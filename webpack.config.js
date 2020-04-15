@@ -2,22 +2,22 @@ const path = require('path');
 
 module.exports = {
   entry: './client/index.js',
-  mode: 'development',
   output: {
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'bundle'),
   },
+  mode: 'none',
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx?/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
       },
       {
         test: /\.css$/i,
@@ -26,10 +26,11 @@ module.exports = {
     ],
   },
   devServer: {
+    hot: true,
     contentBase: path.join(__dirname),
+    publicPath: '/build/',
     compress: true,
     port: 8080,
-    publicPath: '/bundle/',
     proxy: {
       '/api': 'http://localhost:3000',
     },
