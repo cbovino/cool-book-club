@@ -3,7 +3,8 @@ import {
   Link, Redirect,
 } from 'react-router-dom';
 import Signup from './signup.jsx';
-import Dashboard from '../dash/dashboard.js';
+import Dashboard from '../dash/dashboard.jsx';
+import authRouter from './router.jsx';
 
 
 export default class Login extends React.Component {

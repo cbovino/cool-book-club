@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import AuthRouter from './Auth/router.jsx';
+import Login from './Auth/login.jsx';
 
 
 export default class App extends React.Component {

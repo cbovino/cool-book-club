@@ -1,13 +1,11 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
 import Signup from './signup.jsx';
 import Login from './login.jsx';
-import Dashboard from '../dash/dashboard.js';
+import Dashboard from '../dash/dashboard.jsx';
 
 
 export default function authRouter() {
